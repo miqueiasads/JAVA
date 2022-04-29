@@ -38,6 +38,7 @@ public class Arraylist {
        System.out.println(lista.toString());
        lista.remove("Italo de Sousa"); //removendo por objeto
        System.out.println(lista.toString());
-
+       //tamanho da lista(numero de elementos)
+       System.out.println("A lista possui " + lista.size() +" elemento");
    } 
 }
