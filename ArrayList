@@ -1,0 +1,43 @@
+//vantagens
+//quantidade de elementos não pré definidos
+import java.util.ArrayList;
+//importar o ArrayList
+public class Arraylist {
+    public static void main(String[] args){
+       //declarando um Arraylist >> lista aprimorada, modificavél
+       ArrayList<String> lista = new ArrayList<String>();
+               //declare o tipo, que deve ser um objeto
+       //adicionando elementos  
+       //adiciona no fim da lista
+       lista.add("Miqueias");
+       lista.add("Felipe Guedes");
+       lista.add("Wallenon Germano");
+       System.out.println(lista.toString());
+       //adiciona no index selecionado
+       lista.add(1, "Gabriel Nascimento");
+       System.out.println(lista.toString());
+       //remoção de todos os elementos
+       lista.clear();
+       System.out.println(lista.toString());
+       lista.add("Italo de Sousa");
+       lista.add("Andre Gomes");
+       System.out.println(lista.toString());
+       lista.add(0,"Sauron");
+       System.out.println(lista.toString());
+       //saber se um elemento pertence a minha lista
+       System.out.println(lista.contains("Wallenon"));
+       System.out.println(lista.contains("Italo de Sousa"));
+       System.out.println(lista.contains("Andre Gomes"));
+       //retornando  elementos
+       System.out.println(lista.get(2));
+       System.out.println(lista.get(1));
+       System.out.println(lista.get(0));
+       //removendo elementos
+       lista.remove(2); //remoção por indice
+       lista.remove(0); //remoção por indice
+       System.out.println(lista.toString());
+       lista.remove("Italo de Sousa"); //removendo por objeto
+       System.out.println(lista.toString());
+
+   } 
+}
